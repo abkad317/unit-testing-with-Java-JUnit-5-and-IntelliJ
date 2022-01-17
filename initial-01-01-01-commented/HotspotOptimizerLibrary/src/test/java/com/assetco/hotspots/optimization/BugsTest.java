@@ -12,7 +12,7 @@ public class BugsTest {
 
     @Test
     void precedingPartnerWithLongTrailingAssetsDoesNotWin(){
-        AssetVendor partnerVendor = makeVendor(AssetVendorRelationshipLevel.Basic);
+        AssetVendor partnerVendor = makeVendor(AssetVendorRelationshipLevel.Partner);
         Asset missing = givenAssetInResultsWithVendor(partnerVendor);
 
         Asset partnerVendorAsset1 = givenAssetInResultsWithVendor(partnerVendor);
